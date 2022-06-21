@@ -9,8 +9,8 @@ const Details: React.FunctionComponent<Props> = props => {
     const { info, detail } = props;
     return (
         <div className={styles.details_container}>
-            <h4>{info}</h4>
-            <h2>{detail}</h2>
+            <h2>{info}</h2>
+            <h3>{detail}</h3>
         </div>
     );
 };

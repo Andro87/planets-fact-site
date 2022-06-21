@@ -48,12 +48,9 @@ body {
         line-height: 1.56rem;
     }
 }
-h1,
-h2 {
+h1 {
     font-family: "antonio";
     font-weight: 500;
-}
-h1 {
     font-size: 2.5rem;
     line-height: 3.25rem;
     @media screen and (min-width: $desktop) {
@@ -62,6 +59,21 @@ h1 {
     }
 }
 h2 {
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.73px;
+    @media screen and (min-width: $desktop) {
+        font-size: 0.6875rem;
+        line-height: 1.56rem;
+        letter-spacing: 1px;
+    }
+}
+
+h3 {
+    font-family: "antonio";
+    font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.625rem;
     letter-spacing: -0.75px;
@@ -74,27 +86,5 @@ h2 {
         font-size: 2.5rem;
         line-height: 3.25rem;
         letter-spacing: -1.5px;
-    }
-}
-h3,
-h4 {
-    font-family: "spartan";
-    font-weight: 700;
-}
-h3 {
-    @media screen and (min-width: $desktop) {
-        font-size: 0.75rem;
-        line-height: 1.56rem;
-        letter-spacing: 2.6px;
-    }
-}
-h4 {
-    font-size: 0.5rem;
-    line-height: 1rem;
-    letter-spacing: 0.73px;
-    @media screen and (min-width: $desktop) {
-        font-size: 0.6875rem;
-        line-height: 1.56rem;
-        letter-spacing: 1px;
     }
 }
