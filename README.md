@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL ](https://your-solution-url.com)
--   Live Site URL: [Live site URL ](https://your-live-site-url.com)
+-   Solution URL: [Solution URL ](https://github.com/Andro87/planets-fact-site.git)
+-   Live Site URL: [Live site URL ](https://planets-fact-site-delta.vercel.app/)
 
 ## My process
 
@@ -60,9 +60,9 @@ My goal will be to learn more about the new concepts this website introduced me 
 
 Useful resources that introduced me to the dynamic routes concept are :
 
--   [resource 1](https://nextjs.org/docs/routing/dynamic-routes)
--   [resource 2](https://nextjs.org/docs/basic-features/data-fetching/overview)
--   [resource 3](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props)
+-   [Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
+-   [Data fetching-overview](https://nextjs.org/docs/basic-features/data-fetching/overview)
+-   [Get server-side-props](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props)
 
 ## Author
 
