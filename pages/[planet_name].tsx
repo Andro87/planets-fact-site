@@ -17,7 +17,7 @@ const PlanetPage: NextPage<Props> = props => {
     const { planet } = props;
 
     return (
-        <div className={styles.main_container}>
+        <>
             <Head>
                 <title>
                     Frontend Mentor | Planets fact site |{planet.name}
@@ -29,9 +29,11 @@ const PlanetPage: NextPage<Props> = props => {
                 <link rel="icon" href="/assets/favicon-32x32.png" />
             </Head>
             <Header />
-            <Planet planet={planet} />
-            <PlanetDetails planet={planet} />
-        </div>
+            <div className={styles.main_container}>
+                <Planet planet={planet} />
+                <PlanetDetails planet={planet} />
+            </div>
+        </>
     );
 };
 

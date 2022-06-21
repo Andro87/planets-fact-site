@@ -9,7 +9,7 @@ export default function Home() {
     const planet = data[0];
 
     return (
-        <div className={styles.main_container}>
+        <>
             <Head>
                 <title>Frontend Mentor | Planets fact site |Mercury</title>
                 <meta
@@ -19,8 +19,10 @@ export default function Home() {
                 <link rel="icon" href="/assets/favicon-32x32.png" />
             </Head>
             <Header />
-            <Planet planet={planet} />
-            <PlanetDetails planet={planet} />
-        </div>
+            <div className={styles.main_container}>
+                <Planet planet={planet} />
+                <PlanetDetails planet={planet} />
+            </div>
+        </>
     );
 }
