@@ -1,0 +1,111 @@
+@import "../styles/variable.scss";
+.link {
+    color: var(--Light);
+
+    @media screen and(min-width:$tablet) {
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    &:after {
+        content: url("../public/assets/icon-chevron.svg");
+        position: absolute;
+        right: 0;
+        @media screen and(min-width:$tablet) {
+            display: none;
+        }
+    }
+
+    &:before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        position: absolute;
+        left: -45px;
+
+        @media screen and(min-width:$tablet) {
+            display: none;
+            content: "";
+            height: 4px;
+            width: 100%;
+            border-radius: initial;
+            left: initial;
+            bottom: -27px; /*padding bottom di header,rivedere se va bene senza i bordi*/
+        }
+        @media screen and(min-width:$desktop) {
+            bottom: initial;
+            top: -35px; /**/
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: var(--Light);
+
+        &:before {
+            @media screen and(min-width:$tablet) {
+                display: initial;
+                content: "";
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                bottom: -27px; /*padding bottom di header,rivedere se va bene senza i bordi*/
+            }
+            @media screen and(min-width:$desktop) {
+                bottom: initial;
+                top: -35px; /**/
+            }
+        }
+    }
+}
+.planet_desktop_link {
+    color: var(--Light);
+    &:before {
+        @media screen and(min-width:$desktop) {
+            display: initial;
+        }
+    }
+}
+
+.mercury {
+    &:before {
+        background-color: var(--Mercury);
+    }
+}
+.venus {
+    &:before {
+        background-color: var(--Venus);
+    }
+}
+
+.earth {
+    &:before {
+        background-color: var(--Earth);
+    }
+}
+
+.mars {
+    &:before {
+        background-color: var(--Mars);
+    }
+}
+
+.jupiter {
+    &:before {
+        background-color: var(--Jupiter);
+    }
+}
+.saturn {
+    &:before {
+        background-color: var(--Saturn);
+    }
+}
+.uranus {
+    &:before {
+        background-color: var(--Uranus);
+    }
+}
+.neptune {
+    &:before {
+        background-color: var(--Neptune);
+    }
+}

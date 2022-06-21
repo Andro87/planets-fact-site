@@ -1,0 +1,18 @@
+@import "../styles/variable.scss";
+
+.details_container {
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    text-transform: uppercase;
+
+    h4 {
+        opacity: 0.5;
+    }
+    @media screen and(min-width:$tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

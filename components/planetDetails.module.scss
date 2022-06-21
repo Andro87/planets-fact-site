@@ -1,0 +1,23 @@
+@import "../styles/variable.scss";
+
+.section_planet_details {
+    padding: 28px 24px 50px;
+    width: 100%;
+    @media screen and(min-width:$tablet) {
+        padding: 27px 40px 38px;
+    }
+    @media screen and(min-width:$desktop) {
+        padding: 0;
+        padding-bottom: 56px;
+        max-width: 80%;
+        margin: auto;
+    }
+}
+.section_planet_details_wrap {
+    display: grid;
+    gap: 8px;
+    @media screen and(min-width:$tablet) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 11px;
+    }
+}

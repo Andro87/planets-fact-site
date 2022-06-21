@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+module.exports = {
+    reactStrictMode: true,
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en"
+    },
+    webpack(config) {
+        config.module.rules.push({
+            test: /\.svg$/,
+            issuer: /\.(js|ts)x?$/,
+            use: ["@svgr/webpack"]
+        });
 
-module.exports = nextConfig
+        return config;
+    }
+};

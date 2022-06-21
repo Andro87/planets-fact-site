@@ -1,0 +1,70 @@
+@import "../styles/variable.scss";
+
+.btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.5);
+
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 0.5625rem;
+    line-height: 0.625rem;
+    letter-spacing: 2px;
+    position: relative;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: -20px; /*rivedere senza bordi*/
+        left: 0;
+    }
+}
+.Mercury {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Mercury);
+    }
+}
+.Venus {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Venus);
+    }
+}
+.Earth {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Earth);
+    }
+}
+.Mars {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Mars);
+    }
+}
+.Jupiter {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Jupiter);
+    }
+}
+.Saturn {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Saturn);
+    }
+}
+.Uranus {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Uranus);
+    }
+}
+.Neptune {
+    color: hsla(0, 0%, 100%, 1);
+    &:after {
+        background-color: var(--Neptune);
+    }
+}

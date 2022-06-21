@@ -1,0 +1,182 @@
+@import "../styles/variable.scss";
+.planet_info_container {
+    display: grid;
+    grid-template-rows: minmax(5rem, 1fr) min-content minmax(5rem, 1fr) min-content;
+
+    @media screen and (min-width: $desktop) {
+        grid-template-rows: initial;
+        grid-template-columns:
+            minmax(5rem, 1fr) minmax(18rem, 36.25rem) minmax(5rem, 1fr)
+            minmax(min-content, 22rem);
+    }
+}
+.planet_img_container {
+    grid-row: 2 / 3;
+    position: relative;
+    margin: auto;
+    display: flex;
+    @media screen and (min-width: $desktop) {
+        grid-row: initial;
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+}
+.Mercury {
+    max-width: 110px;
+    @media screen and (min-width: $tablet) {
+        max-width: 180px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Venus {
+    max-width: 154px;
+    @media screen and (min-width: $tablet) {
+        max-width: 253px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Earth {
+    max-width: 173px;
+    @media screen and (min-width: $tablet) {
+        max-width: 285px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Mars {
+    max-width: 130px;
+    @media screen and (min-width: $tablet) {
+        max-width: 213px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Jupiter {
+    max-width: 224px;
+    @media screen and (min-width: $tablet) {
+        max-width: 370px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Saturn {
+    max-width: 256px;
+    @media screen and (min-width: $tablet) {
+        max-width: 422px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Uranus {
+    max-width: 176px;
+    @media screen and (min-width: $tablet) {
+        max-width: 290px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.Neptune {
+    max-width: 173px;
+    @media screen and (min-width: $tablet) {
+        max-width: 285px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+    }
+}
+.planet_img {
+    max-width: 100%;
+    margin: auto;
+}
+.planet_img_inner {
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    bottom: -16%;
+    left: 25%;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 163px;
+        left: 36%;
+        bottom: -10%;
+    }
+}
+.planet_info_wrap {
+    grid-row: 4 / 5;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        padding: 0 40px;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-direction: column;
+        grid-row: initial;
+        grid-column: 4 / 5;
+        padding: initial;
+    }
+}
+.planet_info {
+    text-align: center;
+    padding: 0 24px;
+    @media screen and (min-width: $tablet) {
+        text-align: initial;
+        max-width: 350px;
+        padding: initial;
+    }
+    p {
+        font-size: 0.6875rem;
+        line-height: 1.375rem;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        &:nth-child(3) {
+            font-size: 0.75rem;
+            line-height: 1.56rem;
+            opacity: 0.5;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: inherit;
+        margin-left: 8px;
+        font-weight: 700;
+    }
+    span {
+        margin-left: 8px;
+    }
+}
+.btn_container_desktop {
+    display: none;
+
+    @media screen and(min-width:$tablet) {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: inherit;
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 0.5625rem;
+    line-height: 0.625rem;
+    letter-spacing: 2px;
+    @media screen and(min-width:$tablet) {
+        padding: 8px 20px;
+    }
+}

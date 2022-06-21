@@ -1,0 +1,60 @@
+@import "../styles/variable.scss";
+
+.main {
+    @media screen and(min-width:$desktop) {
+        margin: auto;
+        max-width: 80%;
+    }
+}
+
+.btn_container_mobile {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between; /**/
+    @media screen and(min-width:$tablet) {
+        display: none;
+    }
+}
+
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+.embla_slide {
+    position: relative;
+    flex: 0 0 100%;
+
+    @media screen and(min-width:$tablet) {
+        padding: 96px 0 100px; /*perche va fuori la slide*/
+    }
+}
+.btn_wrap {
+    transition: all 0.3s ease-in;
+    @media screen and(min-width:$tablet) {
+        text-transform: uppercase;
+        color: var(--Light);
+        font-family: "spartan";
+        font-weight: 700;
+        font-size: 0.5625rem;
+        line-height: 0.625rem;
+        letter-spacing: 2px;
+        padding: 8px 20px;
+        display: flex;
+    }
+    @media screen and(min-width:$desktop) {
+        font-size: 0.75rem;
+        line-height: 1.56rem;
+        letter-spacing: 2.57px;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: hsla(0, 0%, 85%, 0.2);
+    }
+
+    span {
+        color: hsla(0, 0%, 100%, 0.5);
+        margin-right: 15px;
+    }
+}
