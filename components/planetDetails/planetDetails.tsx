@@ -1,13 +1,13 @@
 import React from "react";
-import Planet from "../model/Planet";
-import Details from "./details";
+import Planet from "../../model/Planet";
+import { Details } from "components";
 import styles from "./planetDetails.module.scss";
 
 interface Props {
     readonly planet: Planet;
 }
 
-const PlanetDetails: React.FunctionComponent<Props> = props => {
+export const PlanetDetails: React.FunctionComponent<Props> = props => {
     const { planet } = props;
     return (
         <section
@@ -23,5 +23,3 @@ const PlanetDetails: React.FunctionComponent<Props> = props => {
         </section>
     );
 };
-
-export default PlanetDetails;

@@ -5,7 +5,7 @@ interface Props {
     readonly info: string;
     readonly detail: string;
 }
-const Details: React.FunctionComponent<Props> = props => {
+export const Details: React.FunctionComponent<Props> = props => {
     const { info, detail } = props;
     return (
         <div className={styles.details_container}>
@@ -14,5 +14,3 @@ const Details: React.FunctionComponent<Props> = props => {
         </div>
     );
 };
-
-export default Details;

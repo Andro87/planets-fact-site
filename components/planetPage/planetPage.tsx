@@ -8,7 +8,7 @@ interface Props {
     readonly planet: string;
 }
 
-const PlanetPage: React.FunctionComponent<Props> = props => {
+export const PlanetPage: React.FunctionComponent<Props> = props => {
     const { path, name, planet } = props;
     const router = useRouter();
 
@@ -24,5 +24,3 @@ const PlanetPage: React.FunctionComponent<Props> = props => {
         </Link>
     );
 };
-
-export default PlanetPage;

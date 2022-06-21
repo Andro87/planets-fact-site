@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 
 import styles from "./planet.module.scss";
-import PlanetInfo from "./planetInfo";
-import Planet from "../model/Planet";
+import { PlanetInfo, BtnDesktop, BtnMobile } from "components";
+import Planet from "../../model/Planet";
 
 import useEmblaCarousel from "embla-carousel-react";
-import BtnDesktop from "./btnDesktop";
-import BtnMobile from "./btnMobile";
 
 interface Props {
     readonly planet: Planet;
 }
 
-const Planet: React.FunctionComponent<Props> = props => {
+export const Planet: React.FunctionComponent<Props> = props => {
     const { planet } = props;
     const buttonMobile = ["overview", "stucture", "surface"];
     const buttonDesktop = [
@@ -131,5 +129,3 @@ const Planet: React.FunctionComponent<Props> = props => {
         </main>
     );
 };
-
-export default Planet;

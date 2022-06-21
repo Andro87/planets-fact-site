@@ -7,7 +7,8 @@ interface Props {
     readonly position: string;
     readonly title: string;
 }
-const BtnDesktop: React.FunctionComponent<Props> = props => {
+
+export const BtnDesktop: React.FunctionComponent<Props> = props => {
     const { selected_planet, onChosen, position, title } = props;
     return (
         <div
@@ -19,5 +20,3 @@ const BtnDesktop: React.FunctionComponent<Props> = props => {
         </div>
     );
 };
-
-export default BtnDesktop;

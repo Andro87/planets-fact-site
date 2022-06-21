@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Header from "../components/header";
-import Planet from "../components/planet";
-import PlanetDetails from "../components/planetDetails";
+import { Header, Planet, PlanetDetails } from "components";
 import styles from "../styles/Home.module.scss";
 import { GetServerSideProps, NextPage } from "next";
 
