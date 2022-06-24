@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import styles from "./planetInfo.module.scss";
-import Source from "../svgs/icon-source.svg";
-import Planet from "../model/Planet";
+import Source from "../../svgs/icon-source.svg";
+import Planet from "../../model/Planet";
 
 interface Props {
     readonly planet: Planet;
@@ -12,7 +12,7 @@ interface Props {
     readonly buttonDesktop?: ReactNode;
 }
 
-const PlanetInfo: React.FunctionComponent<Props> = props => {
+export const PlanetInfo: React.FunctionComponent<Props> = props => {
     const { planet, planetName, image, imageGeology, info, buttonDesktop } =
         props;
 
@@ -54,5 +54,3 @@ const PlanetInfo: React.FunctionComponent<Props> = props => {
         </div>
     );
 };
-
-export default PlanetInfo;

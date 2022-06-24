@@ -6,7 +6,7 @@ interface Props {
     readonly title: string;
     readonly selected_btn: string;
 }
-const BtnMobile: React.FunctionComponent<Props> = props => {
+export const BtnMobile: React.FunctionComponent<Props> = props => {
     const { onChosen, title, selected_btn } = props;
     return (
         <button
@@ -19,5 +19,3 @@ const BtnMobile: React.FunctionComponent<Props> = props => {
         </button>
     );
 };
-
-export default BtnMobile;

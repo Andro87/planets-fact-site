@@ -1,4 +1,4 @@
-@import "../styles/variable.scss";
+@import "../../styles/variable.scss";
 
 .main {
     @media screen and(min-width:$desktop) {
@@ -16,13 +16,13 @@
     }
 }
 
-.embla {
+/*.embla {
     overflow: hidden;
 }
 .embla__container {
     display: flex;
-}
-.embla_slide {
+}*/
+.planet_container {
     position: relative;
     flex: 0 0 100%;
 

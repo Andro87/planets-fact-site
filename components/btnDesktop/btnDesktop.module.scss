@@ -1,7 +1,8 @@
-@import "../styles/variable.scss";
+@import "../../styles/variable.scss";
 .btn_wrap {
     transition: all 0.3s ease-in;
     border: 1px solid hsla(0, 0%, 100%, 0.2);
+    text-decoration: none;
     @media screen and(min-width:$tablet) {
         text-transform: uppercase;
         color: var(--Light);
@@ -19,7 +20,6 @@
         letter-spacing: 2.57px;
     }
     &:hover {
-        cursor: pointer;
         background-color: hsla(0, 0%, 85%, 0.2);
         border: 1px solid transparent;
     }

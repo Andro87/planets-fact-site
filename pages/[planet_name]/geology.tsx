@@ -1,20 +1,20 @@
 import Head from "next/head";
-import Header from "../components/header";
-import Planet from "../components/planet";
-import PlanetDetails from "../components/planetDetails";
-import styles from "../styles/Home.module.scss";
+import styles from "../../styles/Home.module.scss";
+import { Header, Planet, PlanetDetails } from "../../components";
+
 import { GetServerSideProps, NextPage } from "next";
 
-import data from "../data.json";
-import TypePlanet from "../model/Planet";
+import data from "../../data.json";
+import TypePlanet from "../../model/Planet";
 
 interface Props {
     readonly planet: TypePlanet;
+    readonly planet_name: string;
 }
 
 // How to get the query with NextJS - https://nextjs.org/docs/routing/dynamic-routes
 const PlanetPage: NextPage<Props> = props => {
-    const { planet } = props;
+    const { planet, planet_name } = props;
 
     return (
         <div className={styles.main_container}>
@@ -29,7 +29,13 @@ const PlanetPage: NextPage<Props> = props => {
                 <link rel="icon" href="/assets/favicon-32x32.png" />
             </Head>
             <Header />
-            <Planet planet={planet} />
+            <Planet
+                planet={planet}
+                info="geology"
+                image="planet"
+                imageGeology="geology"
+                planetName={planet_name}
+            />
             <PlanetDetails planet={planet} />
         </div>
     );
@@ -47,7 +53,7 @@ export const getServerSideProps: GetServerSideProps = async context => {
         return { notFound: true };
     }
 
-    return { props: { planet } };
+    return { props: { planet, planet_name } };
 };
 
 export default PlanetPage;

@@ -1,4 +1,4 @@
-@import "../styles/variable.scss";
+@import "../../styles/variable.scss";
 .link {
     color: var(--Light);
 
@@ -6,7 +6,7 @@
         color: hsla(0, 0%, 100%, 0.75);
     }
     &:after {
-        content: url("../public/assets/icon-chevron.svg");
+        content: url("../../public/assets/icon-chevron.svg");
         position: absolute;
         right: 0;
         @media screen and(min-width:$tablet) {

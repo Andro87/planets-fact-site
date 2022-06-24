@@ -1,8 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Header from "../components/header";
-import PlanetDetails from "../components/planetDetails";
-import Planet from "../components/planet";
+import { Header, Planet, PlanetDetails } from "../components";
 import { data } from "../data";
 
 export default function Home() {
@@ -19,7 +17,12 @@ export default function Home() {
                 <link rel="icon" href="/assets/favicon-32x32.png" />
             </Head>
             <Header />
-            <Planet planet={planet} />
+            <Planet
+                planet={planet}
+                info="overview"
+                image="planet"
+                planetName="mercury"
+            />
             <PlanetDetails planet={planet} />
         </div>
     );

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styles from "./header.module.scss";
-import Menu from "../svgs/icon-hamburger.svg";
-import PlanetPage from "./planetPage";
-const Header: React.FunctionComponent = () => {
+import Menu from "../../svgs/icon-hamburger.svg";
+import { PlanetPage } from "../index";
+
+export const Header: React.FunctionComponent = () => {
     const [open, setOpen] = useState(false);
     return (
         <header className={styles.header}>
@@ -42,5 +43,3 @@ const Header: React.FunctionComponent = () => {
         </header>
     );
 };
-
-export default Header;
