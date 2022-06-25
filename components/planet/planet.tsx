@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./planet.module.scss";
 
 import { PlanetInfo, BtnDesktop, BtnMobile } from "../index";
 import Planet from "../../model/Planet";
-import { useRouter } from "next/router";
-import useEmblaCarousel from "embla-carousel-react";
 
 interface Props {
     readonly planet: Planet;
@@ -17,38 +15,50 @@ interface Props {
 export const Planet: React.FunctionComponent<Props> = props => {
     const { planet, info, image, imageGeology, planetName } = props;
 
-    const buttonMobile = ["overview", "stucture", "surface"];
+    const buttonMobile = [
+        {
+            path: `/${planetName}`,
+
+            title: "overview"
+        },
+        {
+            path: `/${planetName}/structure`,
+
+            title: "stucture"
+        },
+        {
+            path: `/${planetName}/geology`,
+
+            title: " surface "
+        }
+    ];
     const buttonDesktop = [
         {
-            path: `${planetName}/`,
+            path: `/${planetName}`,
             position: "01",
             title: " overview"
         },
         {
-            path: `${planetName}/structure`,
+            path: `/${planetName}/structure`,
             position: "02",
             title: " internal stucture"
         },
         {
-            path: `${planetName}/geology`,
+            path: `/${planetName}/geology`,
             position: "03",
             title: " surface geology"
         }
     ];
-    const [emblaRef, emblaApi] = useEmblaCarousel({ draggable: false });
-    const [selected, setSelected] = useState<number>(0);
+
     return (
         <main className={styles.main}>
             <div className={styles.btn_container_mobile}>
                 {buttonMobile.map((button, index) => (
                     <BtnMobile
                         key={index}
-                        title={button}
-                        onChosen={() => {
-                            emblaApi.scrollTo(index);
-                            setSelected(index);
-                        }}
-                        selected_btn={selected === index ? planet.name : null}
+                        title={button.title}
+                        path={button.path}
+                        selected_btn={planet.name}
                     />
                 ))}
             </div>
@@ -64,9 +74,7 @@ export const Planet: React.FunctionComponent<Props> = props => {
                         <BtnDesktop
                             key={index}
                             path={button.path}
-                            selected_planet={
-                                selected === index ? planet.name : null
-                            }
+                            selected_planet={planet.name}
                             position={button.position}
                             title={button.title}
                         />

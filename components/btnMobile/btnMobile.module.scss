@@ -1,16 +1,17 @@
 @import "../../styles/variable.scss";
 
 .btn {
+    text-decoration: none;
     background-color: transparent;
     text-transform: uppercase;
     color: hsla(0, 0%, 100%, 0.5);
-
     font-family: "spartan";
     font-weight: 700;
     font-size: 0.5625rem;
     line-height: 0.625rem;
     letter-spacing: 2px;
     position: relative;
+
     &:after {
         content: "";
         width: 100%;

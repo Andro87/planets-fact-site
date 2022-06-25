@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styles from "./header.module.scss";
 import Menu from "../../svgs/icon-hamburger.svg";
 import { PlanetPage } from "../index";
-
 export const Header: React.FunctionComponent = () => {
     const [open, setOpen] = useState(false);
+
     return (
         <header className={styles.header}>
             <p className={styles.logo}>THE PLANETS</p>

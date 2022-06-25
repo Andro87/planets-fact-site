@@ -52,7 +52,9 @@ export const getServerSideProps: GetServerSideProps = async context => {
         return { notFound: true };
     }
 
-    return { props: { planet, planet_name } };
+    return {
+        props: { planet, planet_name }
+    };
 };
 
 export default PlanetPage;
