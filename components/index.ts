@@ -1,8 +1,8 @@
-export { BtnDesktop } from "./btnDesktop/btnDesktop";
-export { BtnMobile } from "./btnMobile/btnMobile";
-export { Details } from "./details/details";
-export { Header } from "./header/header";
-export { Planet } from "./planet/planet";
-export { PlanetDetails } from "./planetDetails/planetDetails";
-export { PlanetPage } from "./planetPage/planetPage";
-export { PlanetInfo } from "./planetInfo/planetInfo";
+export { BtnDesktop } from "./btn_desktop/BtnDesktop";
+export { BtnMobile } from "./btn_mobile/BtnMobile";
+export { Details } from "./details/Details";
+export { Header } from "./header/Header";
+export { Planet } from "./planet/Planet";
+export { PlanetDetails } from "./planet_details/PlanetDetails";
+export { PlanetPage } from "./planet_page/PlanetPage";
+export { PlanetInfo } from "./planet_info/PlanetInfo";

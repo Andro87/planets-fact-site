@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./planetPage.module.scss";
+import styles from "./PlanetPage.module.scss";
 import { useRouter } from "next/dist/client/router";
 interface Props {
     readonly path: string;

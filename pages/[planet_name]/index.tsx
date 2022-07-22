@@ -1,11 +1,11 @@
 import Head from "next/head";
-import styles from "../../styles/Home.module.scss";
-import { Header, Planet, PlanetDetails } from "../../components";
+import styles from "styles/Home.module.scss";
+import { Header, Planet, PlanetDetails } from "components";
 
 import { GetServerSideProps, NextPage } from "next";
 
-import data from "../../data.json";
-import TypePlanet from "../../model/Planet";
+import data from "data.json";
+import TypePlanet from "model/Planet";
 
 interface Props {
     readonly planet: TypePlanet;

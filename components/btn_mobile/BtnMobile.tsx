@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./btnMobile.module.scss";
+import styles from "./BtnMobile.module.scss";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 

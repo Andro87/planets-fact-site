@@ -1,7 +1,7 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
-import { Header, Planet, PlanetDetails } from "../components";
-import { data } from "../data";
+import styles from "styles/Home.module.scss";
+import { Header, Planet, PlanetDetails } from "components";
+import { data } from "data";
 export default function Home() {
     const planet = data[0];
 

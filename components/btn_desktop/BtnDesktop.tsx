@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "./btnDesktop.module.scss";
+import React from "react";
+import styles from "./BtnDesktop.module.scss";
 
 import Link from "next/link";
 import { useRouter } from "next/dist/client/router";

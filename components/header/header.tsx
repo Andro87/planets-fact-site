@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "./header.module.scss";
+import styles from "./Header.module.scss";
 import Menu from "../../svgs/icon-hamburger.svg";
-import { PlanetPage } from "../index";
+import { PlanetPage } from "components";
 export const Header: React.FunctionComponent = () => {
     const [open, setOpen] = useState(false);
 
@@ -26,7 +26,7 @@ export const Header: React.FunctionComponent = () => {
             >
                 <PlanetPage path="/" name="Mercury" planet="mercury" />
                 <hr />
-                <PlanetPage path="/venus" name="Venus" planet="venus" />
+                <PlanetPage path="./venus" name="Venus" planet="venus" />
                 <hr />
                 <PlanetPage path="/earth" name="Earth" planet="earth" />
                 <hr />

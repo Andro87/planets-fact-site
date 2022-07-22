@@ -1,7 +1,7 @@
 import React from "react";
-import Planet from "../../model/Planet";
-import { Details } from "../index";
-import styles from "./planetDetails.module.scss";
+import Planet from "model/Planet";
+import { Details } from "components";
+import styles from "./PlanetDetails.module.scss";
 
 interface Props {
     readonly planet: Planet;

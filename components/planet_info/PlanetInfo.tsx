@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import styles from "./planetInfo.module.scss";
+import styles from "./PlanetInfo.module.scss";
 import Source from "../../svgs/icon-source.svg";
-import Planet from "../../model/Planet";
+import Planet from "model/Planet";
 
 interface Props {
     readonly planet: Planet;

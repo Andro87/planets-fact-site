@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./details.module.scss";
+import styles from "./Details.module.scss";
 
 interface Props {
     readonly info: string;
